@@ -1,4 +1,4 @@
-# 💼 Portafolio Personal – [Tu Nombre]
+# 💼 Portafolio Personal – Wilkin Vasquez Arrieta
 
 Bienvenido a mi portafolio personal, desarrollado con una arquitectura moderna utilizando **React + Vite + TypeScript + SCSS**. Este sitio es una ventana profesional donde comparto mi perfil, experiencia, proyectos destacados y formas de contacto.
 
@@ -25,16 +25,11 @@ Como **Ingeniero en Software especializado en desarrollo frontend con más de 4 
 -   Tarjetas con imagen, descripción y tecnologías usadas
 -   Enlaces directos a repositorios en GitHub y demos en vivo
 
-### 🧪 Experiencia laboral / freelance
+### 🧪 Experiencia laboral
 
--   Empresas o clientes freelance
+-   Empresas o clientes
 -   Roles desempeñados
 -   Logros técnicos y aportes clave
-
-### ✍️ Blog _(opcional)_
-
--   Artículos técnicos, buenas prácticas, resoluciones de problemas, etc.
--   Publicaciones ordenadas por fecha
 
 ### 📬 Contacto
 
