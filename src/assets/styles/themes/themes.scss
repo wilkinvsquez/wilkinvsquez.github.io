@@ -1,0 +1,53 @@
+@use "./variables" as *;
+
+// themes.scss
+// Variables para temas
+// Light Theme (activado con .light-theme)
+
+//:root {
+//	--navbar-bg: #{$color-cream};
+//	--navbar-color: #222;
+//	--navbar-border: rgba(0, 0, 0, 0.05);
+//	--navbar-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+//}
+
+.light-theme {
+	--bg-color: #{$color-cream};
+	--bg-secondary: #{$color-green-mid};
+	--text-color: #{$color-cream};
+	--text-muted: #{$color-green-deep};
+
+	--primary-color: #{$color-green-mid};
+	--primary-hover: #{$color-green-dark};
+	--accent-color: #{$color-green-soft};
+	--border-color: #{$color-cream};
+}
+
+// Dark Theme (activado con .dark-theme)
+.dark-theme {
+	--bg-color: #{$color-green-deep};
+	--bg-secondary: #{$color-green-dark};
+	--text-color: #eaeaea;
+	--text-muted: #b0b0b0;
+
+	--primary-color: #{$color-green-soft};
+	--primary-hover: #{$color-cream};
+	--accent-color: #{$color-green-mid};
+	--border-color: #{$color-green-mid};
+}
+
+//[data-theme="dark"] {
+//	--navbar-bg: rgba(20, 20, 20, 0.9);
+//	--navbar-color: #eee;
+//	--navbar-border: rgba(255, 255, 255, 0.1);
+//	--navbar-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+//}
+
+//body {
+//	background-color: var(--bg-color);
+//	color: var(--text-color);
+//	transition: background-color 0.3s ease, color 0.3s ease;
+//	min-height: 100vh;
+//}
+
+//@forward "self";
