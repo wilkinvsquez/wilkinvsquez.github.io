@@ -1,4 +1,3 @@
-
 import './Hero.css';
 import { Download } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
@@ -17,7 +16,7 @@ export const Hero = () => {
           {t.hero.description}
         </p>
         <div className="hero__actions">
-          <a href="/assets/docs/WilkinVasquezResumeFinal.pdf" download className="btn btn-primary">
+          <a href="/assets/docs/cv_resume.pdf" download="WilkinVasquez_CV.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
             <Download size={20} style={{marginRight: '0.5rem'}}/> {t.hero.downloadCv}
           </a>
           <a href="#contact" className="btn" style={{border: '1px solid var(--color-border)'}}>{t.hero.contactMe}</a>
