@@ -1,22 +1,29 @@
-import Navbar from "./components/Navbar";
-import About from "./sections/About";
-import Contact from "./sections/Contact";
-import Experience from "./sections/Experience";
-import Projects from "./sections/Projects";
+import './styles/global.css'
+import './styles/variables.css'
+import './styles/reset.css'
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Header } from './components/Header/Header';
+import { Footer } from './components/Footer/Footer';
+import { Home } from './pages/Home';
+import { ProjectDetails } from './components/ProjectDetails/ProjectDetails';
+import { MouseSpotlight } from './components/MouseSpotlight/MouseSpotlight';
+import { ScrollToTop } from './components/ScrollToTop/ScrollToTop';
 
 function App() {
-	return (
-		<>
-			<Navbar />
-			<div className='app'>
-				{/* Reemplaza esto con tus secciones reales */}
-				<Experience />
-				<Projects />
-				<About />
-				<Contact />
-			</div>
-		</>
-	);
+  return (
+    <Router>
+      <div className="fixed-background" />
+      <MouseSpotlight />
+      <ScrollToTop />
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/project/:id" element={<ProjectDetails />} />
+      </Routes>
+      <Footer />
+    </Router>
+  );
 }
 
 export default App;
