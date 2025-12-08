@@ -1,0 +1,121 @@
+.timeline {
+  max-width: 800px;
+  margin: 3rem auto 0;
+  position: relative;
+}
+
+.timeline__item {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.timeline__item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline__marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline__icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+  z-index: 2;
+}
+
+.timeline__line {
+  flex-grow: 1;
+  width: 2px;
+  background-color: var(--color-border);
+  margin-top: 0.5rem;
+}
+
+.timeline__item:last-child .timeline__line {
+  display: none;
+}
+
+.timeline__content {
+  flex-grow: 1;
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.timeline__content:hover {
+  border-color: var(--color-accent);
+  transform: translateX(5px);
+}
+
+.timeline__header {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 1rem;
+}
+
+.timeline__role {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.timeline__company {
+  display: block;
+  color: var(--color-accent);
+  font-weight: 500;
+  margin-top: 0.25rem;
+}
+
+.timeline__period {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  margin-top: 0.5rem;
+}
+
+.timeline__description {
+  list-style: disc;
+  padding-left: 1.25rem;
+  color: var(--color-text-secondary);
+}
+
+.timeline__description li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .timeline__item {
+    gap: 1rem;
+    flex-direction: column; /* Stack vertically on mobile */
+  }
+  
+  .timeline__marker {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .timeline__line {
+    display: none; /* Hide line on mobile for cleaner look */
+  }
+  
+  .timeline__icon {
+    width: 32px;
+    height: 32px;
+  }
+}
