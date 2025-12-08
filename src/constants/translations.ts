@@ -1,7 +1,7 @@
 export const translations = {
     en: {
         header: {
-            about: "About",
+            about: "About Me",
             projects: "Projects",
             skills: "Skills",
             education: "Education",
@@ -17,7 +17,7 @@ export const translations = {
             downloadCv: "Download CV"
         },
         about: {
-            title: "About",
+            title: "About Me",
             me: "Me",
             description1: "Frontend Developer with solid experience in agile environments and teamwork. I focus on frontend architecture and full-stack development with Node.js, always seeking best practices and performance.",
             description2: "I have led complex migrations (Ionic/Angular to Vue.js, React to Outsystems) and developed critical applications for companies and clients throughout my career.",
@@ -37,7 +37,7 @@ export const translations = {
             subtitle: "Experience"
         },
         education: {
-            title: "Education &",
+            title: "Education & ",
             subtitle: "Certifications"
         },
         projects: {

@@ -30,9 +30,8 @@ export const About = () => {
           </div>
         </div>
         <div className="about__image" style={{textAlign: 'right'}}>
-          {/* Aquí podrías poner tu foto más adelante */}
           <div className="about__placeholder">
-            <img src={"./assets/images/profile.jpeg"} alt="Personal Profile" />
+            <img src={"./assets/images/profile.png"} alt="Personal Profile" />
           </div>
         </div>
       </div>

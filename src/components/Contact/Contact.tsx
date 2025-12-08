@@ -1,5 +1,5 @@
 import './contact.css';
-import { Mail, MapPin, Phone, Linkedin } from 'lucide-react';
+import { Mail, MapPin,  Linkedin } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
 
 export const Contact = () => {
@@ -16,10 +16,6 @@ export const Contact = () => {
           <div className="contact__item">
             <MapPin className="contact__icon" />
             <span>Alajuela, Costa Rica</span>
-          </div>
-          <div className="contact__item">
-            <Phone className="contact__icon" />
-            <span>+506 85203542</span>
           </div>
           <div className="contact__item">
             <Mail className="contact__icon" />

@@ -25,38 +25,6 @@ An elegant, high-performance personal portfolio website built with modern web te
 - **Styling**: Vanilla CSS (Variables, Flexbox/Grid), [Lucide React](https://lucide.dev/) (Icons)
 - **Routing**: [React Router DOM](https://reactrouter.com/)
 
-## 🚀 Getting Started
-
-Follow these steps to set up the project locally.
-
-### Prerequisites
-
-- Node.js (v16 or higher)
-- npm or yarn
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/wilkinvsquez/wilkinvsquez.github.io.git
-   cd wilkinvsquez.github.io
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Start the development server**
-   ```bash
-   npm run dev
-   ```
-
-4. **Build for production**
-   ```bash
-   npm run build
-   ```
-
 ## 📂 Project Structure
 
 ```bash

@@ -37,13 +37,16 @@
 .about__placeholder {
   width: 100%;
   aspect-ratio: 1/1;
-  background-color: var(--color-bg-secondary);
-  border: 1px dashed var(--color-border);
+  background-color: transparent;
   border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--color-text-secondary);
+}
+.about__placeholder img {
+  height: 100%;
+  border-radius: var(--radius-lg);
 }
 
 @media (max-width: 768px) {
