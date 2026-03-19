@@ -1,4 +1,4 @@
-import "./Skills.css";
+import "./skills.css";
 import { motion } from "framer-motion";
 import { useLanguage } from "../../context/LanguageContext";
 import { skills } from "../../data/skills";
