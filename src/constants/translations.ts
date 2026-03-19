@@ -66,7 +66,7 @@ export const translations: Record<"en" | "es", TranslationSchema> = {
 		},
 		hero: {
 			greeting: "Hi, I'm",
-			role: "Software Engineer focused on Frontend Architecture & Platform Systems",
+			role: "Software Engineer focused on Frontend Architecture",
 			description:
 				"I design and build scalable web applications and internal platforms using Vue.js, Angular, and TypeScript. Specialized in modular systems, feature management, and configuration-driven UI to enable faster product iteration.",
 		},
@@ -116,7 +116,7 @@ export const translations: Record<"en" | "es", TranslationSchema> = {
 		},
 		hero: {
 			greeting: "Hola, soy",
-			role: "Ingeniero de Software enfocado en Arquitectura Frontend y Sistemas de Plataforma",
+			role: "Ingeniero de Software enfocado en Arquitectura Frontend",
 			description:
 				"Diseño y construyo aplicaciones web escalables y plataformas internas utilizando Vue.js, Angular y TypeScript. Especializado en sistemas modulares, gestión de funcionalidades y UI basada en configuración para acelerar la evolución de productos.",
 		},
