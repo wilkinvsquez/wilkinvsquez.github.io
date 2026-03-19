@@ -1,4 +1,4 @@
-import "./About.css";
+import "./about.css";
 import { useLanguage } from "../../context/LanguageContext";
 
 export const About = () => {

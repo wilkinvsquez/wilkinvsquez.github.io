@@ -16,8 +16,8 @@ export const Hero = () => {
 				<p className='hero__description'>{t.hero.description}</p>
 				<div className='hero__actions'>
 					<a
-						href='/assets/docs/cv_resume.pdf'
-						download='WilkinVasquez_CV.pdf'
+						href='/assets/docs/WilkinVasquez_Resume.pdf'
+						download='WilkinVasquez_Resume.pdf'
 						target='_blank'
 						rel='noopener noreferrer'
 						className='btn btn-primary'>
