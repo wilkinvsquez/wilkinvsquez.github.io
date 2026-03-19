@@ -1,79 +1,89 @@
-export const experience = {
-    en: [
-        {
-            id: 1,
-            role: "Software Developer",
-            company: "CENTAURO SOLUTIONS",
-            period: "Feb 2023 - Present",
-            description: [
-                "Collaborated in defining architecture, state management strategies, and component-driven design patterns to improve code reusability and scalability.",
-                "Participated in the development of a custom interpreter that allows adding new modules through JSON-based configurations, reducing development time and making the system highly extensible.",
-                "Built a centralized Feature Manager and internal configuration platform using Vue.js, enabling dynamic activation/deactivation of features and optimizing configuration management across multiple internal projects.",
-                "Migrated Pricesmart Application from Ionic/Angular to Ionic/Vue.js, improving scalability.",
-                "Created internal applications using Outsystems to improve processing efficiency.",
-                "Implemented Google Analytics and One Signal to enhance analytics and notification systems.",
-                "Migrated a billing system from React.js to Outsystems, improving processing efficiency."
-            ]
-        },
-        {
-            id: 2,
-            role: "Frontend Web Developer",
-            company: "CLICKLEASE LIMITADA",
-            period: "Jul 2021 – Jan 2023",
-            description: [
-                "Developed e-commerce applications using PHP, JavaScript, and HTML/CSS.",
-                "Led the development of a Shopify application to process credit applications across multiple marketplaces.",
-                "Designed and developed responsive interfaces with Angular 13+, improving the internal application process.",
-                "Developed an SDK in Node.js to integrate leasing buttons into third-party partner sites."
-            ]
-        },
-        {
-            id: 3,
-            role: "Data Entry",
-            company: "AVANTICA TECHNOLOGIES",
-            period: "Oct 2019 – Jan 2021",
-            description: [
-                "Extracted and managed data from HTML pages using CSS selectors in JIRA and proprietary platforms."
-            ]
-        }
-    ],
-    es: [
-        {
-            id: 1,
-            role: "Desarrollador de Software",
-            company: "CENTAURO SOLUTIONS",
-            period: "Feb 2023 - Presente",
-            "description": [
-                "Colaboré en la definición de la arquitectura, estrategias de administración de estado y patrones de diseño basados en componentes para mejorar la reutilización de código y la escalabilidad.",
-                "Participé en el desarrollo de un intérprete personalizado que permite agregar nuevos módulos mediante configuraciones basadas en JSON, reduciendo el tiempo de desarrollo y aumentando la extensibilidad del sistema.",
-                "Desarrollé un Feature Manager centralizado y una plataforma interna de configuración utilizando Vue.js, permitiendo la activación/desactivación dinámica de funcionalidades y optimizando la gestión de configuraciones en múltiples proyectos internos.",
-                "Migré la aplicación de Pricesmart de Ionic/Angular a Ionic/Vue.js, mejorando la escalabilidad.",
-                "Creé aplicaciones internas utilizando OutSystems para mejorar la eficiencia de los procesos.",
-                "Implementé Google Analytics y OneSignal para fortalecer los sistemas de analítica y notificaciones.",
-                "Migré un sistema de facturación de React.js a OutSystems, mejorando la eficiencia en el procesamiento."
-            ]
+export interface ExperienceItem {
+	id: number;
+	role: string;
+	company: string;
+	period: string;
+	summary: string;
+	contributions: string[];
+}
 
-        },
-        {
-            id: 2,
-            role: "Desarrollador Web Frontend",
-            company: "CLICKLEASE LIMITADA",
-            period: "Jul 2021 – Ene 2023",
-            description: [
-                "Desarrollé aplicaciones de e-commerce utilizando PHP, JavaScript y HTML/CSS.",
-                "Lideré el desarrollo de una aplicación de Shopify para procesar solicitudes de crédito en múltiples marketplaces.",
-                "Diseñé y desarrollé interfaces responsivas con Angular 13+, mejorando el proceso de aplicaciones internas de la empresa.",
-                "Desarrollé un SDK en Node.js para integrar botones para solicitudes de crédito en sitios de socios externos."
-            ]
-        },
-        {
-            id: 3,
-            role: "Data Entry",
-            company: "AVANTICA TECHNOLOGIES",
-            period: "Oct 2019 – Ene 2021",
-            description: [
-                "Extracción y gestión de datos de páginas HTML utilizando selectores CSS en JIRA y plataformas propietarias."
-            ]
-        }
-    ]
+export const experience: Record<"en" | "es", ExperienceItem[]> = {
+	en: [
+		{
+			id: 1,
+			role: "Software Engineer",
+			company: "CENTAURO SOLUTIONS",
+			period: "Feb 2023 - Present",
+			summary:
+				"Designing and building internal platforms and scalable frontend systems to support dynamic application behavior across multiple products.",
+			contributions: [
+				"Led the development of internal platforms enabling dynamic feature control and UI configuration across applications.",
+				"Designed configuration-driven systems to support flexible and scalable application behavior.",
+				"Contributed to frontend architecture and state management strategies improving scalability and maintainability.",
+				"Drove a large-scale migration of a cross-platform application, improving performance and modularity.",
+			],
+		},
+		{
+			id: 2,
+			role: "Frontend Engineer",
+			company: "CLICKLEASE LIMITADA",
+			period: "Jul 2021 – Jan 2023",
+			summary:
+				"Worked on customer-facing financial platforms and integration solutions to enable leasing services across multiple partner ecosystems.",
+			contributions: [
+				"Led the development of embedded financing solutions across partner platforms, enabling seamless user applications.",
+				"Delivered scalable integration solutions across diverse client environments, expanding service reach.",
+				"Contributed to the development of a customer application platform handling sensitive financial data.",
+				"Collaborated with cross-functional teams to deliver user-focused features aligned with business goals.",
+			],
+		},
+		{
+			id: 3,
+			role: "Data Entry",
+			company: "AVANTICA TECHNOLOGIES",
+			period: "Oct 2019 – Jan 2021",
+			summary:
+				"Supported data extraction and processing tasks across internal platforms.",
+			contributions: [],
+		},
+	],
+	es: [
+		{
+			id: 1,
+			role: "Ingeniero de Software",
+			company: "CENTAURO SOLUTIONS",
+			period: "Feb 2023 - Presente",
+			summary:
+				"Diseño y desarrollo de plataformas internas y sistemas frontend escalables que permiten comportamiento dinámico en múltiples aplicaciones.",
+			contributions: [
+				"Lideré el desarrollo de plataformas internas que permiten el control dinámico de funcionalidades y configuración de interfaces.",
+				"Diseñé sistemas basados en configuración que habilitan comportamiento flexible y escalable en las aplicaciones.",
+				"Contribuí a decisiones de arquitectura frontend y estrategias de manejo de estado mejorando la escalabilidad y mantenibilidad.",
+				"Participé en la migración a gran escala de una aplicación cross-platform, mejorando rendimiento y modularidad.",
+			],
+		},
+		{
+			id: 2,
+			role: "Ingeniero Frontend",
+			company: "CLICKLEASE LIMITADA",
+			period: "Jul 2021 – Ene 2023",
+			summary:
+				"Participé en el desarrollo de plataformas financieras orientadas al cliente y soluciones de integración para habilitar servicios de leasing en múltiples ecosistemas de partners.",
+			contributions: [
+				"Lideré el desarrollo de soluciones de financiamiento embebidas en plataformas de partners, permitiendo a los usuarios aplicar directamente desde páginas de producto.",
+				"Implementé soluciones de integración escalables en distintos entornos de clientes, ampliando el alcance del servicio.",
+				"Contribuí al desarrollo de una plataforma de aplicación de clientes manejando información financiera sensible de forma segura y confiable.",
+				"Colaboré con equipos multidisciplinarios para entregar funcionalidades alineadas con objetivos de negocio y experiencia de usuario.",
+			],
+		},
+		{
+			id: 3,
+			role: "Data Entry",
+			company: "AVANTICA TECHNOLOGIES",
+			period: "Oct 2019 – Ene 2021",
+			summary:
+				"Soporte en procesos de extracción, organización y gestión de datos en plataformas internas.",
+			contributions: [],
+		},
+	],
 };

@@ -1,121 +1,117 @@
-.timeline {
-  max-width: 800px;
-  margin: 3rem auto 0;
-  position: relative;
+.experience__grid {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	max-width: 900px;
+	margin: 3rem auto 0;
 }
 
-.timeline__item {
-  display: flex;
-  gap: 2rem;
-  margin-bottom: 3rem;
+.experience__item {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
 }
 
-.timeline__item:last-child {
-  margin-bottom: 0;
+.experience__header {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
 }
 
-.timeline__marker {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.experience__title-row {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
 }
 
-.timeline__icon {
-  width: 40px;
-  height: 40px;
-  background-color: var(--color-bg-secondary);
-  border: 1px solid var(--color-accent);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-accent);
-  z-index: 2;
+.experience__icon {
+	width: 24px;
+	height: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--color-accent);
+	border-radius: 4px;
+	color: white;
+	padding: 4px;
 }
 
-.timeline__line {
-  flex-grow: 1;
-  width: 2px;
-  background-color: var(--color-border);
-  margin-top: 0.5rem;
+.experience__role {
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: var(--color-text-primary);
 }
 
-.timeline__item:last-child .timeline__line {
-  display: none;
+.experience__meta {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	font-size: 1rem;
+	color: var(--color-text-secondary);
+	font-weight: 500;
 }
 
-.timeline__content {
-  flex-grow: 1;
-  background-color: var(--color-bg-secondary);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  padding: 1.5rem;
-  transition: transform var(--transition-fast), border-color var(--transition-fast);
+.experience__divider {
+	color: var(--color-border);
 }
 
-.timeline__content:hover {
-  border-color: var(--color-accent);
-  transform: translateX(5px);
+.experience__company {
+	color: var(--color-text-primary);
 }
 
-.timeline__header {
-  margin-bottom: 1rem;
-  border-bottom: 1px solid var(--color-border);
-  padding-bottom: 1rem;
+.experience__summary {
+	font-size: 1.1rem;
+	line-height: 1.6;
+	color: var(--color-text-primary);
+	opacity: 0.9;
 }
 
-.timeline__role {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--color-text-primary);
+.experience__contributions {
+	margin-top: 1.5rem;
 }
 
-.timeline__company {
-  display: block;
-  color: var(--color-accent);
-  font-weight: 500;
-  margin-top: 0.25rem;
+.experience__contributions-title {
+	font-size: 1rem;
+	font-weight: 700;
+	color: var(--color-text-primary);
+	margin-bottom: 1rem;
 }
 
-.timeline__period {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.875rem;
-  color: var(--color-text-secondary);
-  margin-top: 0.5rem;
+.experience__list {
+	list-style: none;
+	padding-left: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
 }
 
-.timeline__description {
-  list-style: disc;
-  padding-left: 1.25rem;
-  color: var(--color-text-secondary);
+.experience__list-item {
+	position: relative;
+	padding-left: 1.5rem;
+	color: var(--color-text-secondary);
+	line-height: 1.5;
+	font-size: 1rem;
 }
 
-.timeline__description li {
-  margin-bottom: 0.5rem;
-  line-height: 1.6;
+.experience__list-item::before {
+	content: "•";
+	position: absolute;
+	left: 0;
+	color: var(--color-text-primary);
+	font-weight: bold;
 }
 
 @media (max-width: 768px) {
-  .timeline__item {
-    gap: 1rem;
-    flex-direction: column; /* Stack vertically on mobile */
-  }
-  
-  .timeline__marker {
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 0.5rem;
-  }
+	.experience__meta {
+		flex-wrap: wrap;
+		gap: 0.25rem 0.75rem;
+	}
 
-  .timeline__line {
-    display: none; /* Hide line on mobile for cleaner look */
-  }
-  
-  .timeline__icon {
-    width: 32px;
-    height: 32px;
-  }
+	.experience__divider {
+		display: none;
+	}
+
+	.experience__role {
+		font-size: 1.25rem;
+	}
 }

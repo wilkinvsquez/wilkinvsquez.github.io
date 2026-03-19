@@ -1,45 +1,86 @@
-import './Experience.css';
-import { Briefcase, Calendar } from 'lucide-react';
-import { useLanguage } from '../../context/LanguageContext';
-import { experience } from '../../data/experience';
+import "./Experience.css";
+import { Briefcase } from "lucide-react";
+import { useLanguage } from "../../context/LanguageContext";
+import { experience } from "../../data/experience";
 
 export const Experience = () => {
-  const { language, t } = useLanguage();
-  
-  const currentExperience = experience[language];
+	const { language, t } = useLanguage();
 
-  return (
-    <section id="experience" className="section experience">
-      <div className="container">
-        <h2 className="section__title">{t.experience.title} <span className="text-gradient">{t.experience.subtitle}</span></h2>
-        <div className="timeline">
-          {currentExperience.map((item) => (
-            <div key={item.id} className="timeline__item">
-              <div className="timeline__marker">
-                <div className="timeline__icon">
-                  <Briefcase size={20} />
-                </div>
-                <div className="timeline__line"></div>
-              </div>
-              <div className="timeline__content">
-                <div className="timeline__header">
-                  <h3 className="timeline__role">{item.role}</h3>
-                  <span className="timeline__company">{item.company}</span>
-                  <div className="timeline__period">
-                    <Calendar size={16} />
-                    <span>{item.period}</span>
-                  </div>
-                </div>
-                <ul className="timeline__description">
-                  {item.description.map((desc, index) => (
-                    <li key={index}>{desc}</li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
+	const currentExperience = experience[language];
+
+	return (
+		<section id='experience' className='section experience'>
+			<div className='container'>
+				<h2 className='section__title'>
+					{t.sections.experience.title}{" "}
+					<span className='text-gradient'>
+						{t.sections.experience.subtitle}
+					</span>
+				</h2>
+				<div className='experience__grid'>
+					{currentExperience.map((item: any) => {
+						return (
+							<div key={item.id} className='experience__item'>
+								<div className='experience__header'>
+									<div className='experience__title-row'>
+										<div className='experience__icon'>
+											<Briefcase
+												size={20}
+												fill='var(--color-accent)'
+											/>
+										</div>
+										<h3 className='experience__role'>
+											{item.role}
+										</h3>
+									</div>
+									<div className='experience__meta'>
+										<span className='experience__company'>
+											{item.company}
+										</span>
+										<span className='experience__divider'>
+											|
+										</span>
+										<span className='experience__period'>
+											{item.period}
+										</span>
+									</div>
+								</div>
+
+								<div className='experience__content'>
+									<p className='experience__summary'>
+										{item.summary}
+									</p>
+
+									{item.contributions.length > 0 && (
+										<div className='experience__contributions'>
+											<h4 className='experience__contributions-title'>
+												{
+													t.sections.experience
+														.keyContributions
+												}
+											</h4>
+											<ul className='experience__list'>
+												{item.contributions.map(
+													(
+														desc: string,
+														index: number,
+													) => (
+														<li
+															key={index}
+															className='experience__list-item'>
+															{desc}
+														</li>
+													),
+												)}
+											</ul>
+										</div>
+									)}
+								</div>
+							</div>
+						);
+					})}
+				</div>
+			</div>
+		</section>
+	);
 };
