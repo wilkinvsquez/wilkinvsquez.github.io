@@ -1,4 +1,4 @@
-import "./Footer.css";
+import "./footer.css";
 import { useLanguage } from "../../context/LanguageContext";
 
 export const Footer = () => {
