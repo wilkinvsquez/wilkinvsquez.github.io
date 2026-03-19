@@ -1,64 +1,51 @@
-# 💼 Portafolio Personal – Wilkin Vasquez Arrieta
+# Wilkin Vasquez - Software Engineer Portfolio 🚀
 
-Bienvenido a mi portafolio personal, desarrollado con una arquitectura moderna utilizando **React + Vite + TypeScript + CSS**. Este sitio es una ventana profesional donde comparto mi perfil, experiencia, proyectos destacados y formas de contacto.
+![React](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/-Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-Como **Ingeniero en Software especializado en desarrollo frontend con más de 4 años de experiencia**, he trabajado en soluciones modernas, accesibles y escalables para empresas y clientes. Este portafolio refleja no solo mi habilidad técnica, sino también mi atención al detalle, pasión por el código limpio y enfoque en la experiencia de usuario.
+An elegant, high-performance personal portfolio website built with modern web technologies. This project showcases my experience, skills, and certifications wrapped in a premium, dark-themed aesthetic with smooth interactions.
 
----
+## ✨ Features
 
-## 🧭 Secciones del sitio
+- **🎨 Premium Aesthetic**: Custom dark theme with green accents (`#10b981`), glassmorphism effects, and a dynamic background watermark.
+- **📱 Fully Responsive**: Optimized for all devices, featuring a mobile-friendly navigation and adaptive grid layouts.
+- **🌐 Bilingual Support**: Seamless English/Spanish switching using a custom `LanguageContext`.
+- **✨ Interactive Elements**:
+    - **Mouse Spotlight**: A subtle, following spotlight effect on the background.
+    - **Smooth Scroll**: Custom-styled scrollbars and a "Scroll to Top" floating button.
+    - **Hover Effects**: Interactive cards for projects, experience, and certifications.
+- **🎓 Certification Hub**: A dedicated, scrollable section for certifications with direct verification links.
 
-### 🔥 Landing / Hero
+## 🛠️ Tech Stack
 
--   Breve presentación personal
--   Stack tecnológico principal
--   Llamado a la acción directo: _Ver proyectos_ / _Contactar_
+- **Core**: [React](https://react.dev/) (v18), [TypeScript](https://www.typescriptlang.org/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: Vanilla CSS (Variables, Flexbox/Grid), [Lucide React](https://lucide.dev/) (Icons)
+- **Routing**: [React Router DOM](https://reactrouter.com/)
 
-### 👨‍💻 Sobre mí
-
--   Perfil profesional y enfoque actual
--   Áreas de especialidad
--   Tecnologías dominadas (React, Vue, TypeScript, SCSS, etc.)
-
-### 🚀 Proyectos destacados
-
--   Tarjetas con imagen, descripción y tecnologías usadas
--   Enlaces directos a repositorios en GitHub y demos en vivo
-
-### 🧪 Experiencia laboral
-
--   Empresas o clientes
--   Roles desempeñados
--   Logros técnicos y aportes clave
-
-### 📬 Contacto
-
--   Formulario funcional o enlaces a:
-    -   LinkedIn
-    -   Correo electrónico
-    -   Otras redes relevantes
-
----
-
-## 🚀 Tecnologías utilizadas
-
--   ⚛️ **React** – Para interfaces interactivas y escalables
--   ⚡ **Vite** – Bundler moderno y ultrarrápido
--   🧠 **TypeScript** – Tipado estático para robustez y mantenibilidad
--   🎨 **SCSS** – Estilos organizados y reutilizables con variables y mixins
--   🌐 **GitHub Pages** – Hosting gratuito para sitios estáticos
-
----
-
-## 🛠️ Scripts útiles
+## 📂 Project Structure
 
 ```bash
-npm run dev         # Iniciar servidor de desarrollo
-npm run build       # Generar build de producción
-npm run preview     # Previsualizar build local
-npm run deploy      # Deploy automático a GitHub Pages
+src/
+├── components/     # Reusable UI components (Header, Hero, Education, etc.)
+├── context/        # Global state (LanguageContext)
+├── data/           # Static data for Projects, Experience, Education
+├── styles/         # Global styles, variables, reset
+├── pages/          # Page views (Home, ProjectDetails)
+└── App.tsx         # Main application entry point
 ```
 
-🌍 Deploy
-Este sitio está desplegado en GitHub Pages y disponible en:
-👉 https://tuusuario.github.io/miportafolio/
+## 📫 Contact
+
+Feel free to reach out!
+
+- **LinkedIn**: [wilkinvsquez](https://linkedin.com/in/wilkinvsquez)
+- **GitHub**: [wilkinvsquez](https://github.com/wilkinvsquez)
+
+---
+
+<p align="center">
+  Built with ❤️ by Wilkin Vasquez
+</p>
